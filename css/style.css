@@ -82,6 +82,14 @@ img{
     height: 400px;
 }
 
+/* SECTION ABOUT */
+
+.about{
+    min-height: 65vh;
+    
+
+}
+
 
 /* MEDIA QUERRIES */
 
