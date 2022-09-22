@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* COLOR PALETTE:
+PRIMARY: FDEEDC
+SECONDARY: FF8A9
+ACCENT1: F1A661
+ACCENT2: E38B29 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+header{
+    /* position: relative; */
+    height: 100vh;
+    background-image: url(../Images/dog-photo-withApp4.png);
+    background-size: cover;
+    background-position: bottom right;
+    background-color: #FDEEDC; /*PRIMARY*/
+}
+
+.navColor{
+    background-color: #FDEEDC !important;
+}
+
+.container-fluid{
+    background-color: hsl(33, 89%, 93%);
+    font-size: 1.5rem;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    padding: 0.5% 10% 0;
+    text-transform: uppercase;
+}
+
+.navbar-nav{
+    padding: 5% 8%;
+}
+
+.header_heading{
+    position: relative;
+    top: 25%;
+    left: 5%;
+    width: 40%;
+
+}
+
+h1,p{
+    animation: fadeIn 2s ease-in;
+}
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1%;
+    }
+}
+
+.header_img {
+    display: none;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+
+/* MEDIA QUERRIES */
+
+/* HEADER SECTION  */
+
+/* FIRST BREAKPOINT MEDIA MAX-WIDTH: 00px */
+
+@media only screen and (max-width: 600px){
+    
+    header{
+        background-image: none;
+    }
+
+    .navbar-brand{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .navbar-nav{
+        font-size: 1rem;
+    }
+
+    .header_heading{
+        position: absolute;
+        top: 33%;
+        left: 15%;
+        width: 75%;
+    }
+
+    .dropdown{
+        position: relative;
+        z-index: 2;
+    }
+
+    .header_img img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 5px solid black;
+    }
+
+    .header_img{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: inline-block;
+        width: 12rem;
+        height: 12rem;
+        padding: 2%;
+        margin: 0;
+        animation: fadeUp 1s ease-in;
+    }
+
+    @keyframes fadeUp{
+        0%{
+            opacity: 0;
+            top: 80%;
+        }
+
+        50%{
+            opacity: 0.5;
+        }
+
+        100%{
+            opacity: 1%;
+        }
+    }
+
+    h1{
+        z-index: 1;
+        font-size: 1.8rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+
+}
